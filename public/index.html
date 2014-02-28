@@ -1,8 +1,46 @@
 <html>
     <head>
         <title>skez.li</title>
+        <link rel="stylesheet" href="foundation-5.1.1/css/normalize.css" media="screen">
+        <link rel="stylesheet" href="foundation-5.1.1/css/foundation.min.css" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/skez.li.css">
     </head>
     <body>
-        <h1>skez.li will be here. stay tuned.</h1>
+        <div style="text-align: center; padding: 2.5%;">
+            <img src="img/logo.png">
+        </div>
+        <section class="hero-unit" style="position: relative;">
+            <ul data-orbit>
+                <li class="skyscrapers slide">
+                </li>
+                <li class="shoes slide">
+                </li>
+                <li class="teapot slide">
+                </li>
+            </ul>
+            <div class="tablet">
+                <img src="img/skez_scyscrapers.jpg" class="sketch">
+            </div>
+            <h1 class="pitch">
+                skez.li<br />
+                Canvas for<br /> the idealist.
+            </h1>
+        </section>
+        <div style="text-align: center; padding: 5%;">
+            <img src="img/playmarketbutton.png">
+        </div>
+        <script src="foundation-5.1.1/js/vendor/jquery.js"></script>
+        <script src="foundation-5.1.1/js/foundation.min.js"></script>
+        <script>
+            $(document).foundation({
+                orbit: {
+                    bullets: false,
+                    slide_number: false,
+                    timer_speed: 3000,
+                    pause_on_hover: false
+                }
+            });
+        </script>
     </body>
 </html>

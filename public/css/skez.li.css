@@ -1,0 +1,152 @@
+h1 {
+    font-family: 'Ropa sans', sans-serif;
+}
+
+.hero-unit {
+    position: relative;
+}
+
+.hero-unit .tablet {
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    background-image: url("../img/tablet_blank.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-unit .sketch {
+    position: absolute;
+    left: 13.5%;
+}
+
+h1.pitch {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 20%;
+    color: white;
+    right: 2.5%;
+}
+
+.hero-unit, .slide, .hero-unit .orbit-container {
+    width: 100%;
+    background-size: cover;
+}
+
+.slide.skyscrapers {
+    background-image: url('../img/bg_scyscrapers.jpg');
+}
+.slide.shoes {
+    background-image: url('../img/bg_shoes.jpg');
+}
+.slide.teapot {
+    background-image: url('../img/bg_teapot.jpg');
+}
+
+@media only screen {
+    h1.pitch {
+        font-size: 1.5em;
+    }
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 10em;
+    }
+    .hero-unit .tablet {
+        width: 12em;
+    }
+
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+    h1.pitch {
+        font-size: 1.5em;
+    }
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 10em;
+    }
+    .hero-unit .tablet {
+        width: 12em;
+        height: 4em;
+    }
+    .hero-unit .sketch {
+        width: 8em;
+        bottom: 1.75em;        
+    }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 40.063em) {
+    h1.pitch {
+        font-size: 3em;
+    }
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 20em;
+    }
+    .hero-unit .tablet {
+        width: 30em;
+    }
+    .hero-unit .sketch {
+        width: 15em;
+        bottom: 1.75em;        
+    }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) {
+    h1.pitch {
+        font-size: 4em;
+    }    
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 25em;
+    }
+    .hero-unit .tablet {
+        width: 30em;
+        height: 20em;
+    }
+    .hero-unit .sketch {
+        width: 20em;
+        bottom: 1.75em;        
+    }
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    h1.pitch {
+        font-size: 4em;
+    }    
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 25em;
+    }
+    .hero-unit .tablet {
+        width: 40em;
+    }
+} /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+@media only screen and (min-width: 90.063em) {
+    h1.pitch {
+        font-size: 5em;
+    }    
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 35em;
+    }
+    .hero-unit .tablet {
+        width: 60em;
+    }
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+    h1.pitch {
+        font-size: 5em;
+    }    
+    .hero-unit, .slide, .hero-unit .orbit-container {
+        height: 35em;
+    }
+    .hero-unit .tablet {
+        width: 60em;
+    }
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+@media only screen and (min-width: 120.063em) {
+    h1.pitch {
+        font-size: 5em;
+    }
+    .hero-unit .tablet {
+        width: 60em;
+    }
+} /* min-width 1921px, xlarge screens */
