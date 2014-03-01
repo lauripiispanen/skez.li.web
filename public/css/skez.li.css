@@ -6,31 +6,44 @@ h1 {
     position: relative;
 }
 
+.center {
+    text-align: center;
+}
+.orbit-timer, .orbit-prev, .orbit-next {
+    display: none;
+}
+
 .hero-unit .tablet {
-    position: absolute;
-    bottom: 0px;
-    left: 5%;
     background-image: url("../img/tablet_blank.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.hero-unit .tablet > .orbit-container {
+    height: 100%;
 }
 
 .hero-unit .sketch {
     position: absolute;
-    left: 13.5%;
+    left: 22.25%;
+    width: 59%;
+    overflow: hidden;
 }
 
 h1.pitch {
-    position: absolute;
     text-transform: uppercase;
-    bottom: 20%;
     color: white;
-    right: 2.5%;
 }
 
-.hero-unit, .slide, .hero-unit .orbit-container {
+.hero-unit, .slide, .hero-unit > .orbit-container {
     width: 100%;
     background-size: cover;
+    position: absolute;
 }
 
 .slide.skyscrapers {
@@ -47,11 +60,14 @@ h1.pitch {
     h1.pitch {
         font-size: 1.5em;
     }
-    .hero-unit, .slide, .hero-unit .orbit-container {
+    .hero-unit, .slide, .hero-unit > .orbit-container {
         height: 10em;
     }
     .hero-unit .tablet {
-        width: 12em;
+        width: 15em;
+    }
+    .hero-unit .sketch {
+        bottom: 2.3em;
     }
 
 } /* Define mobile styles */
@@ -60,16 +76,17 @@ h1.pitch {
     h1.pitch {
         font-size: 1.5em;
     }
-    .hero-unit, .slide, .hero-unit .orbit-container {
+    .hero-unit, .slide, .hero-unit > .orbit-container {
         height: 10em;
     }
     .hero-unit .tablet {
-        width: 12em;
-        height: 4em;
+        width: 10em;
+    }
+    .hero-unit .tablet {
+        width: 15em;
     }
     .hero-unit .sketch {
-        width: 8em;
-        bottom: 1.75em;        
+        bottom: 2.3em;
     }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
@@ -77,15 +94,14 @@ h1.pitch {
     h1.pitch {
         font-size: 3em;
     }
-    .hero-unit, .slide, .hero-unit .orbit-container {
+    .hero-unit, .slide, .hero-unit > .orbit-container {
         height: 20em;
-    }
+    }    
     .hero-unit .tablet {
-        width: 30em;
+        width: 25em;
     }
     .hero-unit .sketch {
-        width: 15em;
-        bottom: 1.75em;        
+        bottom: 3.75em;
     }
 } /* min-width 641px, medium screens */
 
@@ -93,60 +109,46 @@ h1.pitch {
     h1.pitch {
         font-size: 4em;
     }    
-    .hero-unit, .slide, .hero-unit .orbit-container {
+    .hero-unit, .slide, .hero-unit > .orbit-container {
         height: 25em;
     }
     .hero-unit .tablet {
-        width: 30em;
-        height: 20em;
+        width: 100%;
     }
     .hero-unit .sketch {
-        width: 20em;
-        bottom: 1.75em;        
+        bottom: 6em;
     }
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
     h1.pitch {
-        font-size: 4em;
+        font-size: 3.5em;
     }    
-    .hero-unit, .slide, .hero-unit .orbit-container {
+    .hero-unit, .slide, .hero-unit > .orbit-container {
         height: 25em;
-    }
-    .hero-unit .tablet {
-        width: 40em;
     }
 } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
 
 @media only screen and (min-width: 90.063em) {
     h1.pitch {
-        font-size: 5em;
+        font-size: 4em;
     }    
-    .hero-unit, .slide, .hero-unit .orbit-container {
-        height: 35em;
-    }
-    .hero-unit .tablet {
-        width: 60em;
+    .hero-unit, .slide, .hero-unit > .orbit-container {
+        height: 30em;
     }
 } /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
     h1.pitch {
-        font-size: 5em;
+        font-size: 4em;
     }    
-    .hero-unit, .slide, .hero-unit .orbit-container {
-        height: 35em;
-    }
-    .hero-unit .tablet {
-        width: 60em;
+    .hero-unit, .slide, .hero-unit > .orbit-container {
+        height: 30em;
     }
 } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 @media only screen and (min-width: 120.063em) {
     h1.pitch {
         font-size: 5em;
-    }
-    .hero-unit .tablet {
-        width: 60em;
     }
 } /* min-width 1921px, xlarge screens */

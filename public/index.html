@@ -13,19 +13,36 @@
         <section class="hero-unit" style="position: relative;">
             <ul data-orbit>
                 <li class="skyscrapers slide">
+                    <img>
                 </li>
                 <li class="shoes slide">
                 </li>
                 <li class="teapot slide">
                 </li>
             </ul>
-            <div class="tablet">
-                <img src="img/skez_scyscrapers.jpg" class="sketch">
+            <div class="row">
+                <div class="small-8 columns center">
+                    <div class="tablet">
+                        <ul data-orbit class="sketch">
+                            <li>
+                                <img src="img/skez_scyscrapers.jpg">
+                            </li>
+                            <li>
+                                <img src="img/skez_shoes.jpg">
+                            </li>
+                            <li>
+                                <img src="img/skez_teapot.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small-4 columns center">
+                    <h1 class="pitch" style="text-align: left;">
+                        skez.li<br />
+                        Canvas for<br /> the idealist.
+                    </h1>
+                </div>
             </div>
-            <h1 class="pitch">
-                skez.li<br />
-                Canvas for<br /> the idealist.
-            </h1>
         </section>
         <div style="text-align: center; padding: 5%;">
             <img src="img/playmarketbutton.png">
@@ -33,14 +50,15 @@
         <script src="foundation-5.1.1/js/vendor/jquery.js"></script>
         <script src="foundation-5.1.1/js/foundation.min.js"></script>
         <script>
-            $(document).foundation({
-                orbit: {
-                    bullets: false,
-                    slide_number: false,
-                    timer_speed: 3000,
-                    pause_on_hover: false
-                }
-            });
+        $(".hero-unit").foundation({
+            orbit: {
+                bullets: false,
+                slide_number: false,
+                timer_speed: 3000,
+                pause_on_hover: false,
+                timer: true
+            }
+        });
         </script>
     </body>
 </html>
