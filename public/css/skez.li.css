@@ -1,6 +1,29 @@
 h1 {
     font-family: 'Ropa sans', sans-serif;
 }
+section.play-button.floater {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+section.play-button.static {
+    margin-top: 1em;
+    display: none;
+}
+section.play-button img {
+    width: 200px;
+    height: 64px;
+}
+
+section.functionalities {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1em;
+}
+
+section.functionalities h4 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
 .hero-unit {
     position: relative;
@@ -38,7 +61,9 @@ h1 {
 h1.pitch {
     text-transform: uppercase;
     color: white;
+    margin-top: 20%;
 }
+
 
 .hero-unit, .slide, .hero-unit > .orbit-container {
     width: 100%;
@@ -87,6 +112,12 @@ h1.pitch {
     }
     .hero-unit .sketch {
         bottom: 2.3em;
+    }
+    section.play-button.floater {
+        display: none;
+    }
+    section.play-button.static {
+        display: block;
     }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
